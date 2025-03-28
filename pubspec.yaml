@@ -2,6 +2,7 @@ name: ffmpeg_helper
 description: FFmpeg commands helper for flutter with support for setup on windows platform.
 version: 1.0.1
 homepage: https://github.com/abhay-s-rawat/ffmpeg_helper
+publish_to: none
 
 environment:
   sdk: ">=2.18.5 <4.0.0"
@@ -14,7 +15,12 @@ dependencies:
   path_provider: ^2.1.0
   dio: ^5.3.2
   archive: ^3.3.7
-  ffmpeg_kit_flutter_min_gpl: ^6.0.3
+  ffmpeg_kit_flutter:
+    git:
+      url: git@github.com:ptech/ffmpeg-kit.git
+      path: flutter/flutter
+      ref: local-dependencies-ffmpeg-kit-6-0-2
+  
   package_info_plus: ^4.1.0
   path: ^1.8.3
 
